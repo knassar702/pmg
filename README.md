@@ -9,6 +9,9 @@ Extract parameters/paths from urls
 <img src='src/image.png'>
 
 
+* Save results
+ `$ cat urls.txt | python3 PmG.py ResultsFile.txt`
+
 here you can add more parameters/paths using regex :D
 
 ```python
