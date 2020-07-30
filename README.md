@@ -16,9 +16,10 @@ here you can add more parameters/paths using regex :D
 
 ```python
 wordlist = [
-        r'(url=|password=|link=|u=|username=|link_id=)',
-        '/+CSCOU+', # CVE-2020-3452
+        r'(url=|password=|link=|u=|word=|username=|link_id=)',
+        r'\+CSCOU+', # CVE-2020-3452
         r'\.(sql|db|tar|backup|bak|zip|git|php)'
         ]
+
 ```
 
