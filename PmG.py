@@ -27,6 +27,17 @@ wordlist = [
         r'\.(sql|db|tar|backup|bak|zip|git|php)'
         ]
 
+try:
+    output = sys.argv[1]
+except:
+    output = None
+if output:
+    try:
+        f = open(output,'a')
+        f.close()
+    except Exception as e:
+        print(f'[{red}-{end}] {e}')
+        sys.exit()
 red = '\u001b[31m'
 end = '\u001b[0m'
 green = '\u001b[32m'
@@ -40,5 +51,15 @@ if __name__ == '__main__':
                 if r.group() != None:
                     I = i.replace(r.group(),f'{red}{r.group()}{end}')
                     print(f'[{green}+{end}] Found :> {I}')
+                    if output:
+                        f = open(output,'a')
+                        f.write(f'{i}\n')
+                        f.close()
+            except KeyboardInterrupt:
+                if output:
+                    f.close()
+                    sys.exit()
             except:
                 pass
+        if output:
+            f.close()
