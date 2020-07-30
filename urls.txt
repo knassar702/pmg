@@ -3,5 +3,5 @@ http://example.net/user/?file=index.php
 http://example.net/files/index.bak
 http://example.net/files/sql.db
 http://example.net/posts/all?word=some%20data
-http://example.net/+CSCOT+/translation-table
+http://example.net/+CSCOU+/translation-table
 http://example.net/show/data?username=knassar702
