@@ -22,9 +22,9 @@ print(f"""
 [{magenta}#{end}] Coded By : Khaled Nassar @knassar702
  """)
 wordlist = [
-        r'(url=|password=|link=|u=|word=|username=|link_id=)',
+        r'(url=|password=|link=|u=|word=|username=|link_id=|sql=|user=|cmd=|c=|redirect=|os=)',
         r'\+CSCOU+', # CVE-2020-3452
-        r'\.(sql|db|tar|backup|bak|zip|git|php)'
+        r'\.(sql|db|tar|backup|bak|zip|git|php|txt|sh|jsp)'
         ]
 
 try:
